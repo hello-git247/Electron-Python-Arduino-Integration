@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python-Arduino Electron App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Arduino Python Code Executor</h1>
+
+  <!-- Dropdown for selecting serial port -->
+  <label for="serial-port">Select Serial Port:</label>
+  <select id="serial-port">
+    <option value="">Select Port</option>
+  </select>
+
+  <textarea id="code-input" placeholder="Enter your Python code here"></textarea>
+
+  <button id="run-code">Run Code</button>
+  <button id="refresh">Refresh</button>
+  <button id="connectBtn">Connect</button>
+  <button id="runCodeBtn">Run Python Code</button>
+  <select id="serialPortSelect"></select>
+  <textarea id="pythonCode"></textarea>
+
+
+  <script src="renderer.js"></script>
+</body>
+</html>
