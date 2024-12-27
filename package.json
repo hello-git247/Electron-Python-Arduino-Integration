@@ -1,0 +1,35 @@
+{
+  "name": "electron-python-arduino",
+  "version": "1.0.0",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "dependencies": {
+    "serialport": "^10.0.0"
+  },
+  "devDependencies": {
+    "electron-builder": "^24.0.0",
+    "electron": "^24.0.0"
+  },
+  "build": {
+    "appId": "com.example.electron-python-arduino",
+    "productName": "Electron Python Arduino",
+    "files": [
+      "app/**/*",
+      "index.html",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist"
+    },
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "icon": "app/assets/icon.ico"
+    }
+  }
+}
